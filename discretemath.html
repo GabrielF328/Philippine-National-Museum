@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Logical Operators and Conditional Statements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+            color: #333;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 8px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            margin-top: 15px;
+        }
+        a {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Logical Operators and Conditional Statements</h1>
+
+<div class="section">
+    <h2>1. Logical Operators and Truth Tables</h2>
+    <h3>A. Discussion of the Topic</h3>
+    <p>
+        Logical operators are used to evaluate two or more conditions and return a single true or false result. These are essential in programming, mathematics, and digital circuits.
+    </p>
+    <h4>🧠 Real-World Analogy:</h4>
+    <p>
+        Think of logical operators like rules in real life. For example: "If it's raining AND it's a school day, then bring an umbrella." You need both conditions to be true to act.
+    </p>
+
+    <h4>🔍 Types of Logical Operators</h4>
+
+    <strong>AND ( ∧ or && )</strong>
+    <ul>
+        <li>True only if <u>both</u> conditions are true.</li>
+    </ul>
+    <table>
+        <tr><th>P</th><th>Q</th><th>P ∧ Q</th></tr>
+        <tr><td>True</td><td>True</td><td>True</td></tr>
+        <tr><td>True</td><td>False</td><td>False</td></tr>
+        <tr><td>False</td><td>True</td><td>False</td></tr>
+        <tr><td>False</td><td>False</td><td>False</td></tr>
+    </table>
+
+    <strong>OR ( ∨ or || )</strong>
+    <ul>
+        <li>True if at least one of the conditions is true.</li>
+    </ul>
+    <table>
+        <tr><th>P</th><th>Q</th><th>P ∨ Q</th></tr>
+        <tr><td>True</td><td>True</td><td>True</td></tr>
+        <tr><td>True</td><td>False</td><td>True</td></tr>
+        <tr><td>False</td><td>True</td><td>True</td></tr>
+        <tr><td>False</td><td>False</td><td>False</td></tr>
+    </table>
+
+    <strong>NOT ( ¬ or ! )</strong>
+    <ul>
+        <li>Flips a value. If true becomes false, and vice versa.</li>
+    </ul>
+    <table>
+        <tr><th>P</th><th>¬P</th></tr>
+        <tr><td>True</td><td>False</td></tr>
+        <tr><td>False</td><td>True</td></tr>
+    </table>
+
+    <strong>IMPLICATION ( → )</strong>
+    <ul>
+        <li>Only false when P is true and Q is false.</li>
+        <li>Example: "If I study, then I pass."</li>
+    </ul>
+    <table>
+        <tr><th>P</th><th>Q</th><th>P → Q</th></tr>
+        <tr><td>True</td><td>True</td><td>True</td></tr>
+        <tr><td>True</td><td>False</td><td>False</td></tr>
+        <tr><td>False</td><td>True</td><td>True</td></tr>
+        <tr><td>False</td><td>False</td><td>True</td></tr>
+    </table>
+
+    <p>
+        ➕ Learn more from this PDF:
+        <a href="https://germanna.edu/sites/default/files/2022-03/Logic%20and%20Truth%20Tables.pdf" target="_blank">Germanna College – Logic and Truth Tables</a>
+    </p>
+
+    <h3>B. Example / Video</h3>
+    <iframe src="https://www.youtube.com/embed/wRMC-ttjhwM" title="Logical Operators and Truth Tables"></iframe>
+</div>
+
+<div class="section">
+    <h2>2. Conditional Statements</h2>
+    <h3>A. Discussion of the Topic</h3>
+    <p>
+        A conditional statement is a logical statement that has two parts: a hypothesis and a conclusion. It is usually written in the form <strong>"If P, then Q"</strong> (symbolically: <strong>P → Q</strong>).
+    </p>
+
+    <h4>📘 Definitions:</h4>
+    <ul>
+        <li><strong>P</strong> is called the hypothesis (or antecedent).</li>
+        <li><strong>Q</strong> is the conclusion (or consequent).</li>
+        <li>The whole statement <strong>P → Q</strong> is true in all cases, except when P is true and Q is false.</li>
+    </ul>
+
+    <h4>✅ Example:</h4>
+    <p>
+        <strong>If it is raining (P), then the ground is wet (Q).</strong><br>
+        This is false only if it’s raining but the ground is somehow not wet.
+    </p>
+
+    <h4>🔁 Variations:</h4>
+    <ul>
+        <li><strong>Converse:</strong> If Q, then P → <em>Not always logically equivalent.</em></li>
+        <li><strong>Inverse:</strong> If not P, then not Q</li>
+        <li><strong>Contrapositive:</strong> If not Q, then not P → <em>Logically equivalent to original</em></li>
+    </ul>
+
+    <h4>🧠 Common Mistake:</h4>
+    <p>
+        Don’t assume the converse of a statement is always true. “If you are a dog, then you have four legs” does not mean “If you have four legs, then you are a dog.”
+    </p>
+
+    <p>
+        ➕ Learn more at:
+        <a href="https://math.libretexts.org/Courses/SUNY_Schenectady_County_Community_College/Discrete_Structures/01%3A_Introduction_to_Writing_Proofs_in_Mathematics/1.01%3A_Statements_and_Conditional_Statements" target="_blank">
+            LibreTexts – Conditional Statements
+        </a>
+    </p>
+
+    <h3>B. Example / Video</h3>
+    <iframe src="https://www.youtube.com/embed/F3544ZyO-eU" title="Conditional Statements in Logic"></iframe>
+</div>
+
+</body>
+</html>
